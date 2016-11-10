@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"getall",
+				"getAllUsersTimeoutFunction"
+			],
+			[
 				"isA",
 				"isActive"
 			],
@@ -75,6 +79,51 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/script.js",
+			"settings":
+			{
+				"buffer_size": 9696,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2333,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/chat.css",
+			"settings":
+			{
+				"buffer_size": 4590,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/ajax.php",
+			"settings":
+			{
+				"buffer_size": 1480,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/classes/Chat.class.php",
+			"settings":
+			{
+				"buffer_size": 5321,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -213,6 +262,9 @@
 	],
 	"file_history":
 	[
+		"/E/Projects/Web/Domains/aitec/php/classes/DB.class.php",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Projects/Web/Xampp/apache/conf/extra/httpd-vhosts.conf",
 		"/E/Projects/Web/Domains/aitec/css/page.css",
 		"/E/Projects/Web/Domains/aitec/php/classes/ChatBase.class.php",
 		"/E/Projects/Web/Domains/aitec/php/classes/ChatUser.class.php",
@@ -223,7 +275,6 @@
 		"/E/Dropbox/Studium/5 HS16/AITEC/Gruppe 9/Projektvorlagen/libraries/Arduino_Rest_Server/config_rest.h",
 		"/E/Dropbox/Studium/5 HS16/AITEC/Gruppe 9/Projektvorlagen/libraries/Arduino_Rest_Server/rest_server.h",
 		"/E/Projects/Web/Domains/aitec/php/ajax.php",
-		"/E/Projects/Web/Domains/aitec/php/classes/DB.class.php",
 		"/E/Dropbox/Lost Cards.txt",
 		"/E/Dropbox/Studium/5 HS16/DMG/Shared/Gruppensex/Uebung DS/Code.txt",
 		"/E/csharp-robot-master/RobotCtrl/Constants.cs",
@@ -238,7 +289,6 @@
 		"/e/projects/web/server/xampp 1.8.3-5 vc11/1.8.3-5",
 		"/e/projects/web/server/xampp 1.8.3-5 vc11/vc11/mysql/bin/my.ini",
 		"/E/Projects/Web/Domains/aitec/tables.sql",
-		"/C/Windows/System32/drivers/etc/hosts",
 		"/E/Projects/Web/Server/xampp 1.8.3-5 vc11/apache/conf/extra/httpd-vhosts.conf",
 		"/E/Projects/Web/Server/xampp 1.8.3-5 vc11/apache/conf/httpd.conf",
 		"/C/WINDOWS/System32/drivers/etc/hosts",
@@ -357,6 +407,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"name",
+			"getUsersTimeoutFunction",
+			".",
+			"isAdmin",
+			"getUsers",
+			"chatGet",
 			"$user",
 			"ChatUser",
 			"$user",
@@ -450,8 +506,155 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8117,
+								8117
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4517.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2014,
+								2014
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 336.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/chat.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4590,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "php/ajax.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 294.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "php/classes/Chat.class.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4504,
+								4504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

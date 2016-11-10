@@ -3,6 +3,10 @@
 /* The Chat class exploses public static methods, used by ajax.php */
 
 class Chat{
+	public static function isAdmin(){
+		return $_SESSION['isAdmin'];
+	}
+
 	public static function login($name, $password){
 
 		$password = md5(strtolower(trim($password)));
@@ -159,6 +163,15 @@ class Chat{
 	}
 
 	public static function getAllUsers(){
+		if(!isset($_SESSION['user'])){
+			return array();
+		}
+
+		if(!Chat::isAdmin()){
+			throw new Exception("You're no Admin!");
+		}
+
+
 		$mysqli = DB::getMySQLiObject();
 
 		$stmt = $mysqli->prepare("SELECT
@@ -178,17 +191,17 @@ class Chat{
 
 			$user = array(
 				'name' => $name,
-				'gravatar' => Chat::gravatarFromHash($gravatar),
 				'password' => "",
 				'isActive' => $isActive,
 				'isAdmin' => $isAdmin,
-				'isLoggedIn' => $isLoggedIn
+				'isLoggedIn' => $isLoggedIn,
+				'gravatar' => Chat::gravatarFromHash($gravatar)
 			);
 
 			$users[] = $user;
         }
 
-        return $users;
+        return array("users" => $users);
 	}
 	
 	public static function getChats($lastID){

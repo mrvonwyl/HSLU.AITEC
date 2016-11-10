@@ -47,6 +47,8 @@ var chat = {
 					chat.displayError(r.error);
 				}
 				else chat.login(r.name,r.gravatar);
+
+				chat.getAllUsers();
 			});
 			
 			return false;
@@ -144,6 +146,7 @@ var chat = {
 			});
 			
 			$.chatPOST('logout');
+			chat.getAllUsers();
 			
 			return false;
 		});
@@ -156,14 +159,8 @@ var chat = {
 			}
 		});
 
-		// admin
+		chat.getAllUsers();
 
-		$.chatGET('getAllUsers',function(r){
-			if(r.users){
-				alert(r.users);
-			}
-		})
-		
 		// Self executing timeout functions
 		
 		(function getChatsTimeoutFunction(){
@@ -174,6 +171,9 @@ var chat = {
 			chat.getUsers(getUsersTimeoutFunction);
 		})();
 		
+		(function getAllUsersTimeoutFunction(){
+			chat.getAllUsersTimeout(getAllUsersTimeoutFunction);
+		})();
 	},
 	
 	// The login method hides displays the
@@ -355,8 +355,31 @@ var chat = {
 			
 			$('#chatUsers').html(users.join(''));
 			
-			setTimeout(callback,15000);
+			setTimeout(callback,10000);
 		});
+	},
+
+	getAllUsersTimeout : function(callback){
+		chat.getAllUsers();
+
+		setTimeout(callback, 15000);
+	},
+
+	getAllUsers : function(){
+		$.chatGET('getAllUsers',function(r){
+			if(r.error){
+				chat.displayError(r.error);
+			}
+			else{
+				$('#users tr:not(:first)').remove();
+
+				$.each(r.users, function(i, e){
+					var row = $("<tr><td>" + e.name + "</td><td>" + e.isActive + "</td><td>" + e.isAdmin + "</td><td>" + e.isLoggedIn + "</td></tr>");
+					$('#users').append(row);
+					console.log(row);
+				});
+			}
+		})
 	},
 	
 	// This method displays an error message on the top of the page:

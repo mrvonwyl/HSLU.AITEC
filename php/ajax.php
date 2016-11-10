@@ -3,9 +3,9 @@
 /* Database Configuration. Add your details below */
 
 $dbOptions = array(
-	'db_host' => 'localhost',
-	'db_user' => 'root',
-	'db_pass' => '',
+	'db_host' => 'remote-mysql4.servage.net',
+	'db_user' => 'aitec',
+	'db_pass' => 'Detwodeleutanzt5',
 	'db_name' => 'aitec'
 );
 
