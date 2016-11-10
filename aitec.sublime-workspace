@@ -1,0 +1,540 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"isA",
+				"isActive"
+			],
+			[
+				"login",
+				"loginOk"
+			],
+			[
+				"fad",
+				"fadeIn"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"back",
+				"background-repeat"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"fin",
+				"finalDims"
+			],
+			[
+				"final",
+				"finalWidth"
+			],
+			[
+				"imgu",
+				"imgUrl"
+			],
+			[
+				"imgU",
+				"imgUrl"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 385.0,
+		"last_filter": "sss",
+		"selected_items":
+		[
+			[
+				"sss",
+				"Set Syntax: SQL"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"toggle",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"pcrem",
+				"Package Control: Remove Package"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				"togg",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"toggle open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sspl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"pclp",
+				"Package Control: List Packages"
+			],
+			[
+				"ssc",
+				"Set Syntax: C"
+			],
+			[
+				"pcip",
+				"Package Control: Install Package"
+			],
+			[
+				"pcrp",
+				"Package Control: Remove Package"
+			],
+			[
+				"pc remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Convert Case: Title Case"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - User"
+			],
+			[
+				"pc rem",
+				"Package Control: Remove Repository"
+			],
+			[
+				"pc install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pc instal",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"package control ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package Control",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 438.0
+	},
+	"console":
+	{
+		"height": 594.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Projects/Web/Domains/aitec",
+		"/E/Projects/Web/Domains/aitec/css",
+		"/E/Projects/Web/Domains/aitec/js",
+		"/E/Projects/Web/Domains/aitec/php",
+		"/E/Projects/Web/Domains/aitec/php/classes"
+	],
+	"file_history":
+	[
+		"/E/Projects/Web/Domains/aitec/css/page.css",
+		"/E/Projects/Web/Domains/aitec/php/classes/ChatBase.class.php",
+		"/E/Projects/Web/Domains/aitec/php/classes/ChatUser.class.php",
+		"/E/Projects/Web/Domains/aitec/index.html",
+		"/E/Projects/Web/Domains/aitec/css/chat.css",
+		"/E/Projects/Web/Domains/aitec/js/script.js",
+		"/E/Projects/Web/Domains/aitec/php/classes/Chat.class.php",
+		"/E/Dropbox/Studium/5 HS16/AITEC/Gruppe 9/Projektvorlagen/libraries/Arduino_Rest_Server/config_rest.h",
+		"/E/Dropbox/Studium/5 HS16/AITEC/Gruppe 9/Projektvorlagen/libraries/Arduino_Rest_Server/rest_server.h",
+		"/E/Projects/Web/Domains/aitec/php/ajax.php",
+		"/E/Projects/Web/Domains/aitec/php/classes/DB.class.php",
+		"/E/Dropbox/Lost Cards.txt",
+		"/E/Dropbox/Studium/5 HS16/DMG/Shared/Gruppensex/Uebung DS/Code.txt",
+		"/E/csharp-robot-master/RobotCtrl/Constants.cs",
+		"/E/csharp-robot-master/RobotCtrl/IOPort.cs",
+		"/E/csharp-robot-master/RobotCtrl/RobotConsole.cs",
+		"/E/Dropbox/Studium/5 HS16/PREN1/Gruppe 11/Analysen/Risiken/Risiken_TT.txt",
+		"/E/Dropbox/Studium/5 HS16/PREN1/Gruppe 11/Analysen/Risiken/Risiken_MV.txt",
+		"/E/asfaf",
+		"/E/Dropbox/Studium/5 HS16/DMG/Shared/Ilias/01-Modulunterlagen/04_1013_S1/05 uni-daten.sql",
+		"/E/Dropbox/Studium/5 HS16/DMG/Shared/Ilias/01-Modulunterlagen/04_1013_S1/04 uni_schema.sql",
+		"/e/projects/web/server/xampp",
+		"/e/projects/web/server/xampp 1.8.3-5 vc11/1.8.3-5",
+		"/e/projects/web/server/xampp 1.8.3-5 vc11/vc11/mysql/bin/my.ini",
+		"/E/Projects/Web/Domains/aitec/tables.sql",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/E/Projects/Web/Server/xampp 1.8.3-5 vc11/apache/conf/extra/httpd-vhosts.conf",
+		"/E/Projects/Web/Server/xampp 1.8.3-5 vc11/apache/conf/httpd.conf",
+		"/C/WINDOWS/System32/drivers/etc/hosts",
+		"/E/Dropbox/Visual Studio Enterprise 2015.1 Serial.txt",
+		"/e/projects/web/server/xampp 1.8.3-5 vc11/vc11/apache/conf/httpd.conf",
+		"/E/Projects/Web/Server/xampp 1.8.3-5 vc11/apache/conf/extra/httpd-xampp.conf",
+		"/C/Users/Dethrall/Downloads/EASEUS Partition Master 10.5 Professional + Technician Edition+Crack - Cyclonoid/Read Me!!.txt",
+		"/E/Dropbox/Neues Textdokument.txt",
+		"/C/Users/Dethrall/Documents/Arduino/libraries/BLE_SDK_for_Arduino/src/boards.h",
+		"/C/Users/Dethrall/Documents/Arduino/libraries/RBL_nRF8001/examples/BLEFirmataSketch/Boards.h",
+		"/C/Users/Dethrall/Documents/Arduino/libraries/BLEPeripheral/utility/boards.h",
+		"/C/Users/Dethrall/Documents/Arduino/libraries/RBL_nRF8001/examples/BLEControllerSketch/Boards.h",
+		"/E/asd.txt",
+		"/C/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino/main.cpp",
+		"/C/Users/Dethrall/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/code.txt",
+		"/E/Dropbox/Studium/4 FS16/NS/ccna questions.txt",
+		"/E/Dropbox/Studium/4 FS16/PHER2/PHER2/aufgaben.txt",
+		"/E/Dropbox/Studium/4 FS16/PHER2/PHER2/blub.txt",
+		"/E/Dropbox/Studium/4 FS16/PHER2/PHER2/blub (Philipp Leu's conflicted copy 2016-06-30).txt",
+		"/E/mac addr",
+		"/E/Projects/Web/Domains/lvwe/pages/concerts.php",
+		"/E/01_Game/loggerViewer.properties",
+		"/E/01_Game/logger.properties",
+		"/E/01_Game/gameLogger.properties",
+		"/E/Gruppe 5 Game/application.properties",
+		"/E/01_Game/loggerServer.properties",
+		"/E/Dropbox/Studium/4 FS16/VSK/Gruppe 6/LotsOfFoxes/gameLogger.properties",
+		"/E/Dropbox/Studium/4 FS16/VSK/Gruppe 6/LotsOfFoxes/logger.properties",
+		"/E/Dropbox/Studium/4 FS16/VSK/Gruppe 6/LotsOfFoxes/loggerServer.properties",
+		"/E/Dropbox/Studium/4 FS16/VSK/Gruppe 6/LotsOfFoxes/loggerViewer.properties",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-loggerviewer/.gitignore",
+		"/E/Projects/Web/Domains/luziavonwyl/pages/concerts.php",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-loggerserver/.gitignore",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-prg2game/.gitignore",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-loggercommon/.gitignore",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-loggercomponent/.gitignore",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-stringpersistor/.gitignore",
+		"/E/LotsOfFoxes/logger.properties",
+		"/E/LotsOfFoxes/loggerViewer.properties",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-loggerserver/loggerServer.properties",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/g06-prg2game/logger.properties",
+		"/C/Users/Dethrall/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/LEQ7LIL5/motor.c",
+		"/C/Users/Dethrall/AppData/Local/Microsoft/Windows/INetCache/Content.Outlook/LEQ7LIL5/main.c",
+		"/E/Projects/C/NetBeans/MC/Adressverwaltung/adressverwaltung.exe.stackdump",
+		"/E/Dropbox/Studium/4 FS16/VSK/Gruppe 6/01_Zwischenabgabe/logger.properties",
+		"/C/Users/Dethrall/AppData/Local/Temp/Temp2_LotsOfFoxes.jar.zip/logger.properties",
+		"/E/VSK/logger.properties",
+		"/C/Users/Dethrall/AppData/Local/Temp/Temp1_LotsOfFoxes.jar.zip/logger.properties",
+		"/E/Dropbox/Studium/4 FS16/MC/Codewarrior C/Ueb04_4/Sources/main.c",
+		"/E/RPI Usnet Guide.txt",
+		"/E/Dropbox/Studium/4 FS16/MC/Codewarrior C/Ueb04_4/Sources/queue.c",
+		"/E/Dropbox/Studium/4 FS16/MC/Codewarrior C/Ueb04_4/Project_Headers/queue.h",
+		"/E/Dropbox/Studium/4 FS16/MC/Codewarrior/Ueb03/Sources/main.asm",
+		"/E/Dropbox/Studium/4 FS16/MC/Codewarrior/Ueb02_PortIO_ASM/Sources/main.asm",
+		"/E/Dropbox/Studium/4 FS16/IPCV/Übungen/Übung 2/Bluescreen.m",
+		"/E/Dropbox/Studium/4 FS16/VSK/Eclipse LEPA Standards/java_CodeStyle_Formatter.xml",
+		"/E/Projects/Web/Domains/test.php",
+		"/E/Dropbox/Studium/4 FS16/NS/TermPaper Topics",
+		"/E/Projects/Java/Eclipse/Lots of Foxes/.gitignore",
+		"/E/Dropbox/Studium/HS15/PRG2/Projects/lots-of-foxes/.gitignore",
+		"/E/Dropbox/Studium/HS15/PRG2/Projects/lots-of-foxes/nbproject/project.properties",
+		"/E/Projects/Web/Domains/agoras/app/Http/routes.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/components/fixedHeader.blade.php",
+		"/E/Projects/Web/Domains/agoras/public/styles/config.less",
+		"/E/Projects/Web/Domains/agoras/public/styles/layout.less",
+		"/E/Projects/Web/Domains/agoras/public/styles/header.less",
+		"/E/Projects/Web/Domains/agoras/public/styles/components.less",
+		"/E/Dropbox/Studium/HS15/PRG2/Projects/prg2-exercise/.gitignore",
+		"/E/Projects/Web/Domains/agoras/public/styles/style.less",
+		"/E/Projects/Web/Domains/agoras/app/Http/Controllers/Auth/AuthController.php",
+		"/E/Projects/Web/Domains/agoras/app/Http/Middleware/Authenticate.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/pages/dashboard.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/splash.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/master.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/auth/login.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/auth/noaccess.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/agoras/auth/register.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/backend/master.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/backend/auth/noaccess.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/backend/splash.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/backend/auth/register.blade.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/backend/auth/login.blade.php",
+		"/E/Projects/Web/Domains/agoras/storage/logs/laravel.log",
+		"/E/Projects/Web/Domains/agoras/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/E/Projects/Web/Domains/agoras/config/database.php",
+		"/E/Projects/Web/Domains/agoras/.env",
+		"/E/Projects/Web/Domains/agoras/resources/assets/styles/style.less",
+		"/E/Projects/Web/Domains/boarday/resources/views/master.blade.php",
+		"/E/Projects/Web/Domains/agoras/public/login screen test/index.php",
+		"/E/Projects/Web/Domains/agoras/public/index_original.php",
+		"/E/Projects/Web/Domains/agoras/public/index.php",
+		"/E/Projects/Web/Domains/agoras/resources/views/welcome.blade.php",
+		"/E/Projects/Web/Domains/agoras/.gitignore",
+		"/E/Projects/Web/Domains/agoras/storage/framework/.gitignore",
+		"/E/Projects/Web/Domains/agoras/storage/logs/.gitignore",
+		"/E/Projects/Web/Domains/agoras/public/miego.php"
+	],
+	"find":
+	{
+		"height": 66.0
+	},
+	"find_in_files":
+	{
+		"height": 146.0,
+		"where_history":
+		[
+			"E:\\Projects\\Web\\Domains\\aitec",
+			"C:\\Users\\Dethrall\\Documents\\Arduino\\libraries\\RBL_nRF8001",
+			"C:\\Users\\Dethrall\\Documents\\Arduino\\libraries",
+			"E:\\Projects\\C\\NetBeans\\MC\\Ueb4.4"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$user",
+			"ChatUser",
+			"$user",
+			"Wrong action",
+			"\n",
+			"ChatUser",
+			"getChatsTimeoutFunction",
+			"people",
+			"register",
+			"loginform",
+			"delete",
+			"this nick is in use",
+			"email",
+			"EMAIL",
+			"email",
+			"loginForm",
+			"login",
+			"0",
+			":",
+			"\t",
+			" ",
+			"login",
+			"chatPOST",
+			"addChatLine",
+			"ajax",
+			"login",
+			"loginForm",
+			"loginB",
+			"loginForm",
+			"Nickname",
+			"name",
+			"directory",
+			"\n",
+			"include",
+			"ble_sdk",
+			"aci_queue_init",
+			"a",
+			"+",
+			",",
+			"\\\"",
+			"dtostrf",
+			"dto",
+			"=",
+			"float",
+			"test",
+			"2",
+			"$",
+			"backend",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"com",
+			"documen"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "aitec.sublime-project",
+	"replace":
+	{
+		"height": 106.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
