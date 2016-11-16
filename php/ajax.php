@@ -33,7 +33,10 @@ try{
 	// Handling the supported actions:
 	
 	switch($_GET['action']){
-		
+		case 'isAdmin':
+			$response = Chat::isAdmin();
+		break;
+
 		case 'login':
 			$response = Chat::login($_POST['name'],$_POST['password']);
 		break;

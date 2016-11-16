@@ -4,7 +4,6 @@ $(document).ready(function(){
 	chat.init();
 	
 });
-
 var chat = {
 	
 	// data holds variables for use in the class:
@@ -140,6 +139,7 @@ var chat = {
 				$(this).remove();
 			});
 			
+			$('#admin').fadeOut();
 			$('#submitForm').fadeOut(function(){
 				$('#loginForm').fadeIn();
 				$('#registerLink').fadeIn();
@@ -175,12 +175,11 @@ var chat = {
 			chat.getAllUsersTimeout(getAllUsersTimeoutFunction);
 		})();
 	},
-	
+
 	// The login method hides displays the
 	// user's login data and shows the submit form
 	
 	login : function(name,gravatar){
-		
 		chat.data.name = name;
 		chat.data.gravatar = gravatar;
 		$('#chatTopBar').html(chat.render('loginTopBar',chat.data));
@@ -190,6 +189,12 @@ var chat = {
 		$('#loginForm').fadeOut(function(){
 			$('#submitForm').fadeIn();
 			$('#chatText').focus();
+
+			$.chatGET('isAdmin', function(r){
+				if(r == 1){
+					$('#admin').fadeIn();
+				}
+			});
 		});
 		
 	},
@@ -366,20 +371,24 @@ var chat = {
 	},
 
 	getAllUsers : function(){
-		$.chatGET('getAllUsers',function(r){
-			if(r.error){
-				chat.displayError(r.error);
-			}
-			else{
-				$('#users tr:not(:first)').remove();
+		$.chatGET('isAdmin', function(r){
+			if(r == 1){
+				$.chatGET('getAllUsers',function(r){
+					if(r.error){
+						chat.displayError(r.error);
+					}
+					else{
+						$('#users tr:not(:first)').remove();
 
-				$.each(r.users, function(i, e){
-					var row = $("<tr><td>" + e.name + "</td><td>" + e.isActive + "</td><td>" + e.isAdmin + "</td><td>" + e.isLoggedIn + "</td></tr>");
-					$('#users').append(row);
-					console.log(row);
+						$.each(r.users, function(i, e){
+							var row = $("<tr><td>" + e.name + "</td><td>" + e.isActive + "</td><td>" + e.isAdmin + "</td><td>" + e.isLoggedIn + "</td></tr>");
+							$('#users').append(row);
+							console.log(row);
+						});
+					}
 				});
 			}
-		})
+		});
 	},
 	
 	// This method displays an error message on the top of the page:

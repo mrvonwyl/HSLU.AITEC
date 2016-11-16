@@ -19,6 +19,8 @@
 	text-shadow:1px 1px 0 #FFFFFF;
 
 	padding: 10px;
+
+	display: none;
 }
 
 #admin #users{
