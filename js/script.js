@@ -381,7 +381,55 @@ var chat = {
 						$('#users tr:not(:first)').remove();
 
 						$.each(r.users, function(i, e){
-							var row = $("<tr><td>" + e.name + "</td><td>" + e.isActive + "</td><td>" + e.isAdmin + "</td><td>" + e.isLoggedIn + "</td></tr>");
+							var isActive = $("<input/>",{
+								class: "ckbIsActive",
+								type: "checkbox",
+								checked: e.isActive == 1 ? "checked" : ""
+							});
+
+							var isAdmin = $("<input>",{
+								class: "ckbIsAdmin",
+								type: "checkbox",
+								checked: e.isAdmin == 1 ? "checked" : ""
+							});
+
+							var isLoggedIn = $("<input>",{
+								type: "checkbox",
+								disabled: "disabled",
+								checked: e.isLoggedIn == 1 ? "checked" : ""
+							});
+
+							var btnUpdate = $("<div/>", {class: "blueButton"}).text("update").click(function(){
+								
+								var isActiveVal = $(this).parents('tr').find('.ckbIsActive').is(':checked') ? 1 : 0;
+								var isAdminVal = $(this).parents('tr').find('.ckbIsAdmin').is(':checked') ? 1 : 0;
+
+								$.chatPOST('updateUser', "username=" + e.name + "&isActive=" + isActiveVal + "&isAdmin=" + isAdminVal, function(r){
+									if(r.error){
+										chat.displayError(r.error);
+									}
+								});
+							});
+
+							var btnDelete = $("<div/>", {class: "blueButton"}).text("delete").click(function(){
+								$.chatPOST('deleteUser', "username=" + e.name, function(r){
+									if(r.error){
+										chat.displayError(r.error);
+									}									
+								});
+
+								$(this).parents('tr').remove();
+							});
+
+							// <td>" + isActive + "</td><td>" + e.isAdmin + "</td><td>" + e.isLoggedIn + "</td>
+							var row = $("<tr><td>" + e.name + "</td></tr>");
+							row.append($("<td/>").html(isActive));
+							row.append($("<td/>").html(isAdmin));
+							row.append($("<td/>").html(isLoggedIn));
+
+							row.append($("<td/>").html(btnUpdate));
+							row.append($("<td/>").html(btnDelete));
+
 							$('#users').append(row);
 							console.log(row);
 						});

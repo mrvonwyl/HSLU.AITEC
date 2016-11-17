@@ -27,6 +27,10 @@
 	width: 100%;
 }
 
+#admin #users input{
+	width: auto;
+}
+
 /* Top Bar */
 
 

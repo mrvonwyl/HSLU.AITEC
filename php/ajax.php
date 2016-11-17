@@ -33,6 +33,13 @@ try{
 	// Handling the supported actions:
 	
 	switch($_GET['action']){
+		case 'deleteUser':
+			$response = Chat::deleteUser($_POST['username']);
+
+		case 'updateUser':
+			$response = Chat::updateUser($_POST['username'],$_POST['isActive'],$_POST['isAdmin']);
+		break;
+
 		case 'isAdmin':
 			$response = Chat::isAdmin();
 		break;

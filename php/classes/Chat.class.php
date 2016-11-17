@@ -8,6 +8,17 @@ class Chat{
 	}
 
 	public static function login($name, $password){
+		if(!$name || !$password){
+			throw new Exception('Fill in all the required fields.');
+		}
+
+		if(!ctype_alnum($name)){
+			throw new Exception('Name has to be A-Z, a-z or 0-9');
+		}
+
+		if(!ctype_alnum($password)){
+			throw new Exception('Password has to be A-Z, a-z or 0-9');
+		}
 
 		$password = md5(strtolower(trim($password)));
 
@@ -68,6 +79,16 @@ class Chat{
 			throw new Exception('Fill in all the required fields.');
 		}
 		
+		if(!ctype_alnum($name)){
+			throw new Exception('Name has to be A-Z, a-z or 0-9');
+		}
+
+		if(!ctype_alnum($password)){
+			throw new Exception('Password has to be A-Z, a-z or 0-9');
+		}
+		
+		$email = htmlspecialchars($email, ENT_QUOTES);
+
 		if(!filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL)){
 			throw new Exception('Your email is invalid.');
 		}
@@ -122,6 +143,8 @@ class Chat{
 			throw new Exception('You haven\' entered a chat message.');
 		}
 	
+		$chatText = htmlspecialchars($chatText, ENT_QUOTES);
+
 		$chat = new ChatLine(array(
 			'author'	=> $_SESSION['user']['name'],
 			'gravatar'	=> $_SESSION['user']['gravatar'],
@@ -135,6 +158,38 @@ class Chat{
 			'status'	=> 1,
 			'insertID'	=> $insertID
 		);
+	}
+
+	public static function deleteUser($name){
+		if(!Chat::isAdmin()){
+			throw new Exception("You're no Admin!");
+		}
+
+		$mysqli = DB::getMySQLiObject();
+
+		$stmt = $mysqli->prepare("DELETE FROM webchat_users WHERE name = ?");
+
+		$stmt->bind_param("s", $name);
+
+		$stmt->execute();
+
+		return "deleted";
+	}
+
+	public static function updateUser($name, $isActive, $isAdmin){
+		if(!Chat::isAdmin()){
+			throw new Exception("You're no Admin!");
+		}
+
+		$mysqli = DB::getMySQLiObject();
+
+		$stmt = $mysqli->prepare("UPDATE webchat_users SET isActive = ?, isAdmin = ? WHERE name = ?");
+
+		$stmt->bind_param("iis", $isActive, $isAdmin, $name);
+
+		$stmt->execute();
+
+		return "updated";
 	}
 	
 	public static function getUsers(){
